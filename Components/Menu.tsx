@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import {CiForkAndKnife} from 'react-icons/ci'
-import miniImg from '../public/mini-pack-img.svg'
+import miniimg from '../public/mini-pack-img.svg'
 import Image from 'next/image'
 
 type Props = {}
@@ -23,19 +23,19 @@ export default function Menu({}: Props) {
 
       <div className='w-[90%] mx-auto bg-white rounded-xl grid grid-cols-1 gap-6 sm:grid-cols-3'>
         <div>
-         <Image  alt='menu' width={30} height={10} src={miniImg}></Image>
+         <Image  alt='menu' width={30} height={10} src={miniimg}></Image>
           <h3>Mini Pack</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, accusamus reiciendis enim vero dolores veniam tenetur.</p>
         </div>
 
         <div>
-         <Image alt='menu' width={30} height={10} src={miniImg}></Image>
+         <Image alt='menu' width={30} height={10} src={miniimg}></Image>
           <h3>Mini Pack</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, accusamus reiciendis enim vero dolores veniam tenetur.</p>
         </div>
 
         <div>
-         <Image alt='menu' width={30} height={10} src={miniImg}></Image>
+         <Image alt='menu' width={30} height={10} src={miniimg}></Image>
           <h3>Mini Pack</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, accusamus reiciendis enim vero dolores veniam tenetur.</p>
         </div>

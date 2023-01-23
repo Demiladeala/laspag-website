@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import heroImg from '../public/mobile-hero-img.svg'
+import heroimg from '../public/mobile-hero-img.svg'
 import Image from 'next/image'
 import React from 'react'
 
@@ -25,7 +25,7 @@ export default function Hero({}: Props) {
         </div>
 
         <div className='flex justify-center'>
-          <Image alt='hero' src={heroImg} className='w-60 md:w-[400px] md:animate-pulse md:duration-1000'></Image>
+          <Image alt='hero' src={heroimg} className='w-60 md:w-[400px] md:animate-pulse md:duration-1000'></Image>
         </div>
 
         <div className='hidden md:flex w-[50%] h-[87vh] right-0 bottom-0 absolute bg-[#edcf7e]/40 polygon overflow-x-hidden'>
