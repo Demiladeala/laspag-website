@@ -1,6 +1,6 @@
 import Header from '@/components/Header'
-import Hero from '@/components/Hero'
 import Menu from '@/components/Menu'
+import Hero from '@/components/Hero'
 import Head from 'next/head'
 import styles from 'styles/home.module.css'
 import Image from 'next/image'
@@ -19,7 +19,7 @@ export default function Home() {
       <div className=' font-montserrat scroll-smooth'>
         
       <section id='header'>
-        <Header/>
+       <Header/>
       </section>
 
       <section id='hero'>
