@@ -1,3 +1,6 @@
+import Header from '@/Components/Header'
+import Hero from '@/Components/Hero'
+import Menu from '@/Components/Menu'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -12,8 +15,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div className='flex bg-yellow-400 uppercase text-center p-5 mx-auto items-center justify-center'>
-        LA-SPAG
+      <div className=' font-montserrat scroll-smooth'>
+        
+      <section id='header'>
+        <Header/>
+      </section>
+
+      <section id='hero'>
+        <Hero/>
+      </section>
+
+      <section id='menu'>
+        <Menu/>
+      </section>
+
+      {/* ABOUT */}
+
+      {/* NEWSLETTER */}
+
+      {/* FOOTER */}
       </div>
     </>
   )
