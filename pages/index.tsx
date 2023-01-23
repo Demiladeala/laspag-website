@@ -2,6 +2,7 @@ import Header from '@/Components/Header'
 import Hero from '@/Components/Hero'
 import Menu from '@/Components/Menu'
 import Head from 'next/head'
+import styles from 'styles/home.module.css'
 import Image from 'next/image'
 
 

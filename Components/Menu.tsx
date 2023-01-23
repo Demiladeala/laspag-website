@@ -12,13 +12,13 @@ export default function Menu({}: Props) {
     whileInView={{opacity:1}}
     transition={{duration:1}}
     viewport={{once: true}}
-    className='h-screen relative justify-evenly max-w-full bg-[#edcf7e]/5'>
+    className='h-screen relative justify-evenly max-w-full bg-[#edcf7e]/10'>
 
       <div className='flex p-8 justify-center'>
         <h3 className='text-2xl sm:text-3xl font-bold'>Menu</h3>
       </div>
 
-      <div className='w-[90%] mx-auto bg-white rounded-xl grid grid-cols-1 gap-6 sm:grid-cols-3'>
+      <div className='w-[80%] mx-auto bg-white rounded-xl grid grid-cols-1 gap-6 sm:grid-cols-3'>
         <div>
          <Image  alt='menu' width={30} height={10} src={miniimg}></Image>
           <h3>Mini Pack</h3>
