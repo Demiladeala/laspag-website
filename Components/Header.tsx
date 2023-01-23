@@ -5,7 +5,6 @@ import React from 'react'
 import {BsFillPersonFill, BsTelegram} from 'react-icons/bs'
 import {HiOutlineMenuAlt2} from 'react-icons/hi'
 import {AiOutlineInstagram , AiFillTwitterCircle , AiFillFacebook} from 'react-icons/ai'
-
 import Link from 'next/link'
 
 type Props = {}

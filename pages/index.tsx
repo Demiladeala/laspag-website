@@ -1,9 +1,7 @@
-import Header from '@/components/Header'
 import Menu from '@/components/Menu'
 import Hero from '@/components/Hero'
+import Header from '@/components/Header'
 import Head from 'next/head'
-import styles from 'styles/home.module.css'
-import Image from 'next/image'
 
 
 export default function Home() {
