@@ -1,6 +1,6 @@
-import Menu from '@/components/Menu'
-import Hero from '@/components/Hero'
-import Header from '@/components/Header'
+import Header from '@/components/header'
+import Hero from '@/components/hero'
+import Menu from '@/components/menu'
 import Head from 'next/head'
 
 

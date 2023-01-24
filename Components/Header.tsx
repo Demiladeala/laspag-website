@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import logo from '../public/logo.png'
 import React from 'react'
-import {BsFillPersonFill, BsTelegram} from 'react-icons/bs'
+import {BsFillPersonFill} from 'react-icons/bs'
 import {HiOutlineMenuAlt2} from 'react-icons/hi'
-import {AiOutlineInstagram , AiFillTwitterCircle , AiFillFacebook} from 'react-icons/ai'
+import {AiOutlineInstagram , AiFillTwitterCircle , AiOutlineWhatsApp} from 'react-icons/ai'
 import Link from 'next/link'
 
 type Props = {}
@@ -35,8 +35,7 @@ export default function Header({}: Props) {
           <div className='hidden sm:flex gap-4'>
           <Link href='/'><AiOutlineInstagram /> </Link>
             <Link href='/'><AiFillTwitterCircle/></Link>
-            <Link href='/'><AiFillFacebook/></Link>
-            <Link href='/'><BsTelegram/></Link>
+            <Link href='/'><AiOutlineWhatsApp/></Link>
           </div>
       </div>
     </motion.div>

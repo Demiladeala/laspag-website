@@ -5,6 +5,3 @@
 ## pnpm install
 
 ## pnpm dev
-# Ecommerce-website
-# Ecommerce-website
-# laspag-website
