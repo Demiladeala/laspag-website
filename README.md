@@ -1,4 +1,4 @@
-## La-Spag-Website built by Oluwademilade Ala, Ola, Praise Oyeniyi, David and Ife
+## La-Spag-Website built by Oluwademilade Ala, Ola and Ife
 
 ## Getting Started
 
