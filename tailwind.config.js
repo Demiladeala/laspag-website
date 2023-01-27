@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
+        ptsans:"PT Sans Caption",
         montserrat:"Montserrat",
+        seaweed: "Seaweed Script",
       },
     },
   },
