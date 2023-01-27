@@ -21,7 +21,7 @@ export default function Hero({}: Props) {
       whileInView={{x:0}}
       transition={{duration:1, type:[0.6,0.01,-0.05,0.95], delay:.2}}
       viewport={{once:true}}
-      className='w-full flex flex-col justify-start px-4 pt-40 md:px-20 md:mt-36'
+      className='w-full flex flex-col justify-start px-4 pt-40 md:px-20 md:mt-36 md:pt-0'
       >
         <h1 className='font-bold text-4xl font-montserrat md:text-8xl'>DELICACY</h1>
         <p className=' font-seaweed text-3xl md:text-5xl ml-6 md:ml-28'>Like never before</p>
