@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import logo from '../public/logo.png'
+import logo from '../public/logo.png';
 import React from 'react'
 import {BsFillPersonFill} from 'react-icons/bs'
 import {HiOutlineMenuAlt2} from 'react-icons/hi'
