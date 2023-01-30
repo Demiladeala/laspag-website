@@ -10,6 +10,6 @@
         clip-path: polygon(0 100%, 100% 100%, 100% 100%, 100% calc(100% - 10vw));
     }
 }
-.hero-bg{
+.hero{
     background: linear-gradient(180deg, #DAA520 0%, #EFBA34 51.04%, #AC7F0E 100%);
 }

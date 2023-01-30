@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div className=' font-montserrat scroll-smooth'>
+      <div className=' font-montserrat scroll-smooth bg-[#F3F3F3]'>
         
       <section id='header'>
        <Header/>

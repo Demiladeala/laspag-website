@@ -25,12 +25,7 @@ export default function Header({}: Props) {
               <HiOutlineMenuAlt2 className='mr-4' size={25}/>
           </div>
 
-          <div className='hidden sm:flex gap-4'>
-          <Link href='/'><AiOutlineInstagram size={20} /> </Link>
-            <Link href='/'><AiFillTwitterCircle size={20} className='text-blue-400'/></Link>
-            <Link href='/'><AiOutlineWhatsApp size={20} className='text-green-500'/></Link>
-          </div>
-
+      
 
           <div className='hidden sm:flex gap-6 mr-8 font-medium text-[16px]'> 
             <Link href='/' className='text-[#D8A61F]'>Home</Link>
@@ -41,6 +36,13 @@ export default function Header({}: Props) {
               <BsFillTelephoneFill className='mt-1'/>
               <p>09020169257</p>
             </div>
+          </div>
+
+
+          <div className='hidden sm:flex gap-4'>
+          <Link href='/'><AiOutlineInstagram className='text-pink-400' size={20} /> </Link>
+            <Link href='/'><AiFillTwitterCircle size={20} className='text-blue-400'/></Link>
+            <Link href='/'><AiOutlineWhatsApp size={20} className='text-green-500'/></Link>
           </div>
 
          
