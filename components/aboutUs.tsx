@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutPlate from '../public/about-plate.png'
+import {GiForkKnifeSpoon} from 'react-icons/gi'
 import Babs from '../public/BabsDp.png'
 import Image from 'next/image'
 
@@ -9,7 +10,10 @@ export default function AboutUs({}: Props) {
   return (
     <div className='about-outer pb-20'>
       <div className="about-inner space-y-0">
-        <h3 className='text-[#D8A61F] font-bold text-4xl text-center pb-5'>About</h3>
+        <div className='flex pt-[50px] justify-center'>
+          <h3 className='text-2xl sm:text-3xl font-bold pb-20 text-center pt-10'>About</h3>
+          <GiForkKnifeSpoon size={25} className='text-[#D8A61F] mt-12 animate-bounce duration-75'/>
+        </div>
 
 
         <div className="about-inner-top flex flex-start items-center space-x-10">

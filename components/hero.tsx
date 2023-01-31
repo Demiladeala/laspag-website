@@ -18,8 +18,8 @@ export default function Hero({}: Props) {
         </motion.div>
 
         <motion.div className='h-[48%] sm:h-[98%] w-full'>
-          <Image src={heroimg} alt='hero' className='visible sm:hidden'/>
-          <Image src={desktopheroimg} alt='desktop hero' className='hidden sm:flex pt-16'/>
+          {/* <Image src={heroimg} alt='hero' className='visible sm:hidden'/>
+          <Image src={desktopheroimg} alt='desktop hero' className='hidden sm:flex pt-16'/> */}
         </motion.div>
 
       </motion.div>
