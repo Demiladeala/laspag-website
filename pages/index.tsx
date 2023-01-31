@@ -6,6 +6,7 @@ import AboutUs from '@/components/aboutUs'
 import Newsletter from '@/components/newsletter'
 import Contact from '@/components/contact'
 import Banner from '@/components/banner'
+import Footer from '@/components/footer'
 
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div className=' font-montserrat scroll-smooth bg-[#F3F3F3]'>
+      <div className=' font-montserrat scroll-smooth bg-[#F3F3F3] !overflow-x-hidden'>
         
       <section id='header'>
        <Header/>
@@ -47,9 +48,10 @@ export default function Home() {
       <section id='banner'>
         <Banner/>
       </section>
-      
 
-      {/* FOOTER */}
+      <section id='footer'>
+        <Footer/>
+      </section>
       </div>
     </>
   )
