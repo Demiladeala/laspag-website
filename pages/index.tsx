@@ -2,6 +2,10 @@ import Header from '../components/header'
 import Hero from '../components/hero'
 import Menu from '../components/menu'
 import Head from 'next/head'
+import AboutUs from '@/components/aboutUs'
+import Newsletter from '@/components/newsletter'
+import Contact from '@/components/contact'
+import Banner from '@/components/banner'
 
 
 export default function Home() {
@@ -28,9 +32,22 @@ export default function Home() {
         <Menu/>
       </section>
 
-      {/* ABOUT */}
+      <section id='about'>
+        <AboutUs/>
+      </section>
 
-      {/* NEWSLETTER */}
+      <section id='newsletter'>
+        <Newsletter/>
+      </section>
+
+      <section id='contact'>
+        <Contact/>
+      </section>
+
+      <section id='banner'>
+        <Banner/>
+      </section>
+      
 
       {/* FOOTER */}
       </div>
