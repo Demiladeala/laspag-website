@@ -4,7 +4,7 @@ type Props = {}
 
 export default function Newsletter({}: Props) {
   return (
-    <div className='newsletter-outer py-20 font-normal'>
+    <div className='newsletter-outer sm:py-20 font-normal'>
       <div className="newsletter-inner sm:w-4/6 w-5/6 mx-auto rounded-3xl bg-white text-center sm:space-y-10 space-y-5 p-14">
         <h3 className='sm:text-3xl font-bold border-l-[#D8A61F] text-xs'>SUBSCRIBE TO OUR NEWSLETTER</h3>
         <p className='sm:text-xl text-[7px]'>Subscribe to our newsletter to get updates on our products</p>

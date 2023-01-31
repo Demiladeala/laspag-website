@@ -37,7 +37,7 @@ export default function Contact({}: Props) {
 
             <div className="git-outer bg-white rounded-3xl absolute sm:-top-10 sm:left-1/4 sm:w-4/6 top-60 w-full text-xl mb-20">
                 <div className="git-inner w-full h-auto">
-                    <div className="git-main-content sm:w-[75%] w-full sm:ml-[22%] py-20 !pb-10 px-5 space-y-3">
+                    <div className="git-main-content sm:w-[75%] w-full sm:ml-[22%] py-20 sm:!pb-10 !pb-5 px-5 space-y-3">
                         <h3 className='sm:text-3xl text-sm font-bold pl-2 border-l-2 border-l-[#D8A61F] w-3/6 mx-auto text-center'>GET IN TOUCH</h3>
                         <h5 className='text-center text-[7px]'>Contact us for an order, help, or to join the team</h5>
                         
