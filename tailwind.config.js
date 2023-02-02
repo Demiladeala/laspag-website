@@ -12,6 +12,8 @@ module.exports = {
         'montserrat':["Montserrat", "sans-serif"],
         'seaweed': ["Seaweed Script", "sans-serif"],
         'sansation':['Sansation', 'sans-serif'],
+        'quattrocento':['Quattrocento Sans', 'sans-serif'],
+        'robotoCondensed':['Roboto Condensed','sans-serif'],
       },
     },
   },

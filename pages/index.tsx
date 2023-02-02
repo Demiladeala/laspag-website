@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Header from '../components/header'
 import Hero from '../components/hero'
 import Menu from '../components/menu'
@@ -10,6 +11,13 @@ import Footer from '@/components/footer'
 
 
 export default function Home() {
+  const [nav, setNav] = useState(false)
+  const handleNav = () => {
+    setNav(!nav)
+  }
+
+
+
   return (
     <>
       <Head>
@@ -19,8 +27,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div className=' font-montserrat scroll-smooth bg-[#F3F3F3]'>
-        
+      <div className={`nav? 'fixed': 'font-montserrat scroll-smooth bg-[#F3F3F3] z-49'`}>
+      
       <section id='header'>
        <Header/>
       </section>

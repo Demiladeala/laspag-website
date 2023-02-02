@@ -13,8 +13,10 @@ export default function Hero({}: Props) {
       <motion.div
       className='w-full m-auto pt-20 relative h-full flex flex-col sm:flex-row'
       >
-        <motion.div className='h-[48%] sm:h-[98%] w-full'>
-
+        <motion.div className='h-[48%] sm:h-[98%] w-full flex flex-col items-center p-14 sm:p-36 max-[290px]:p-10'>
+            <p className='text-white text-7xl sm:text-8xl font-robotoCondensed uppercase font-bold text-center max-[290px]:text-5xl'>Delicacy</p>
+            <p className='text-white text-4xl sm:text-6xl font-seaweed pl-8 sm:pr-5 flex justify-end'>Link never before</p>
+            <p className='text-white sm:mr-12 sm:text-4xl text-3xl flex gap-2 font-quattrocento py-3 max-[290px]:text-xl max-[290px]:block'><span className='font-bold'>Spaghetti</span> and <span className='font-bold'>Chicken</span></p>
         </motion.div>
 
         <motion.div className='h-[48%] sm:h-[98%] w-full'>
