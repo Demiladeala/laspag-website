@@ -6,6 +6,7 @@ import AboutUs from '@/components/aboutUs'
 import Newsletter from '@/components/newsletter'
 import Contact from '@/components/contact'
 import Banner from '@/components/banner'
+import Footer from '@/components/footer'
 
 
 export default function Home() {
@@ -49,7 +50,9 @@ export default function Home() {
       </section>
       
 
-      {/* FOOTER */}
+      <section id='footer'>
+        <Footer/>
+      </section>
       </div>
     </>
   )
