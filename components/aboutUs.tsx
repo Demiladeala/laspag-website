@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutPlate from '../public/about-plate.png'
+import {GiForkKnifeSpoon} from 'react-icons/gi'
 import Babs from '../public/BabsDp.png'
 import Image from 'next/image'
 
