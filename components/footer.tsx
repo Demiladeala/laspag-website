@@ -9,22 +9,22 @@ export default function Footer({}: Props) {
   var Year = new Date().getFullYear();
 
   return (
-    <div className='footer-outer bg-black text-white sm:text-xl text-[7px] font-normal'>
+    <div className='footer-outer bg-black text-white sm:text-xl text-xs font-normal'>
       <div className="footer-inner mx-auto  sm:py-12 py-10 pt-14 sm:w-4/6 w-[90%] border-b border-b-white sm:block flex flex-col space-y-10 sm:space-y-0">
 
         <div className=' flex justify-between items-start'>
           <div className='space-y-4 sm:space-y-7'>
             <Image src={FLogo} alt='Laspag company logo' className='sm:h-auto h-8'></Image>
             <ul className='flex sm:pl-5 space-x-5 text-w'>
-              <li><FaTwitter size={24}/></li>
-              <li><FaInstagram size={24}/></li>
-              <li><FaFacebook size={24}/></li>
+              <li><FaTwitter className='sm:text-2xl text-xl'/></li>
+              <li><FaInstagram className='sm:text-2xl text-xl'/></li>
+              <li><FaFacebook className='sm:text-2xl text-xl'/></li>
             </ul>
           </div>
 
 
           <div className='space-y-4 sm:space-y-7'>
-            <h4 className='sm:text-2xl text-xs font-bold'>Company</h4>
+            <h4 className='sm:text-2xl text-sm font-bold'>Company</h4>
             <ul className='sm:space-y-5 space-y-3'>
               <li>About Us</li>
               <li>Career</li>
@@ -34,7 +34,7 @@ export default function Footer({}: Props) {
 
 
           <div className='space-y-4 sm:space-y-7'>
-            <h4 className='sm:text-2xl text-xs font-bold'>Quicklink</h4>
+            <h4 className='sm:text-2xl text-sm font-bold'>Quicklink</h4>
             <ul className='sm:space-y-5 space-y-3'>
               <li>Menu</li>
               <li>Cart</li>
@@ -44,7 +44,7 @@ export default function Footer({}: Props) {
 
 
           <div className='space-y-4 sm:space-y-7 sm:block hidden'>
-            <h4 className='sm:text-2xl text-xs font-bold'>Get in touch</h4>
+            <h4 className='sm:text-2xl text-sm font-bold'>Get in touch</h4>
             <ul>
               <li>09020921657</li>
             </ul>
@@ -61,7 +61,7 @@ export default function Footer({}: Props) {
 
         
       </div>
-      <h5 className='py-6 text-center sm:text-sm text-[7px]'>@{Year} La-spag. ALL RIGHT RESERVED</h5>
+      <h5 className='py-6 text-center sm:text-sm text-xs'>@{Year} La-spag. ALL RIGHT RESERVED</h5>
     </div>
   )
 }

@@ -11,7 +11,7 @@ export default function AboutUs({}: Props) {
     <div className='about-outer pb-20'>
       <div className="about-inner space-y-0 sm:space-y-10">
         <div className='flex pt-[50px] justify-center'>
-          <h3 className='text-2xl sm:text-3xl font-bold pb-20 text-center pt-10'>About</h3>
+          <h3 className='text-2xl sm:text-3xl font-bold pb-3 text-center pt-10'>About</h3>
           <GiForkKnifeSpoon size={25} className='text-[#D8A61F] mt-12 animate-bounce duration-75'/>
         </div>
 
@@ -25,8 +25,8 @@ export default function AboutUs({}: Props) {
           </div>
           <div className="about-text-top sm:px-7 px-3 border-l-4 border-l-[#D8A61F] space-y-1">
             <h2 className='font-bold sm:text-5xl text-xl'>ASULEWON BABALOLA</h2>
-            <h4 className='sm:text-3xl font-normal text-xs'>FOUNDER & CEO</h4>
-            <p className='sm:text-base font-normal pt-1 leading-tight pr-5 text-[6px]'>
+            <h4 className='sm:text-3xl font-normal text-sm'>FOUNDER & CEO</h4>
+            <p className='sm:text-base font-normal pt-1 leading-tight pr-5 text-xs'>
               lorem ipsum dolor sit amet lorem ipsum dolo sit amet lorem ipsum dolor sit amet lorem
               ipsum dolor sit amet lorem ipsum dolor sit  lorem ipsum dolor sit amet lorem ipsum dolor
               amet lorem ipsum dolor sit amet
@@ -43,7 +43,7 @@ export default function AboutUs({}: Props) {
         <div className="about-inner-bottom flex flex-start items-center space-x-5 w-5/6 mx-auto sm:flex-row flex-col  sm:space-y-0 space-y-5 " >
           <div className="about-text-bottom sm:px-7 px-3 border-l-4 border-l-[#D8A61F] sm:order-1 order-2">
             <h2 className='font-bold sm:text-5xl text-xl'>LA-SPAG</h2>
-            <p className='sm:text-base font-normal pt-2 leading-tight text-[6px]'>
+            <p className='sm:text-base font-normal pt-2 leading-tight text-xs'>
               lorem ipsum dolor sit amet lorem ipsum dolo sit amet lorem ipsum dolor sit amet lorem
               ipsum dolor sit amet lorem ipsum dolor sit  lorem ipsum dolor sit amet lorem ipsum dolor
               amet lorem ipsum dolor sit amet
