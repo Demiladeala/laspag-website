@@ -5,8 +5,8 @@ type Props = {}
 export default function Newsletter({}: Props) {
   return (
     <div className='newsletter-outer sm:py-20 font-normal'>
-      <div className="newsletter-inner sm:w-4/6 w-5/6 mx-auto rounded-3xl bg-white text-center sm:space-y-10 space-y-5 sm:p-14 py-14 px-5">
-        <h3 className='sm:text-3xl font-bold border-l-[#D8A61F] text-sm'>SUBSCRIBE TO OUR NEWSLETTER</h3>
+      <div className="newsletter-inner sm:w-4/6 w-[90%] mx-auto rounded-3xl bg-white text-center sm:space-y-10 space-y-3 sm:p-14 py-10 px-5">
+        <h3 className='sm:text-3xl font-bold border-l-[#D8A61F] text-base'>SUBSCRIBE TO OUR NEWSLETTER</h3>
         <p className='sm:text-xl text-xs'>Subscribe to our newsletter to get updates on our products</p>
 
         <form action="" className='w-5/6 mx-auto sm:h-20 h-10 flex flex-between border-[#D8A61F] rounded-3xl border-2 overflow-hidden'>

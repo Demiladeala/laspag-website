@@ -14,7 +14,7 @@ export default function Contact({}: Props) {
     <div className='contact-outer py-28 pb-40 font-normal sm:pl-20  relative'>
         <div className="contact-inner w-5/6 mx-auto relative">
 
-            <div className="contact-details-outer text-white bg-[#D8A61F] sm:w-[40%] w-5/6 mx-auto sm:mx-0 rounded-3xl px-5 py-10 sm:space-y-10 space-y-5 relative z-10">
+            <div className="contact-details-outer text-white bg-[#D8A61F] sm:w-[40%] w-[85%] mx-auto sm:mx-0 rounded-3xl p-5 sm:py-10 sm:space-y-10 space-y-5 relative z-10">
                 <h3 className='sm:text-3xl text-base font-bold pl-2 border-l-2 border-l-white w-3/6  mx-auto text-center'>Contact Us</h3>
 
                 <div className="contact-details-main sm:space-y-5 space-y-3 sm:text-xl text-xs">
@@ -35,10 +35,10 @@ export default function Contact({}: Props) {
 
 
 
-            <div className="git-outer bg-white rounded-3xl absolute sm:-top-10 sm:left-1/4 sm:w-4/6 top-72 w-full text-xl mb-20">
+            <div className="git-outer bg-white rounded-3xl absolute sm:-top-10 sm:left-1/4 sm:w-4/6 top-60 w-full text-xl mb-20">
                 <div className="git-inner w-full h-auto">
                     <div className="git-main-content sm:w-[75%] w-full sm:ml-[22%] py-20 sm:!pb-10 !pb-5 px-5 space-y-3">
-                        <h3 className='sm:text-3xl text-base font-bold pl-2 border-l-2 border-l-[#D8A61F] w-3/6 mx-auto text-center'>GET IN TOUCH</h3>
+                        <h3 className='sm:text-3xl text-base font-bold pl-2 border-l-2 border-l-[#D8A61F] w-[60%] mx-auto text-center'>GET IN TOUCH</h3>
                         <h5 className='text-center text-xs'>Contact us for an order, help, or to join the team</h5>
                         
                         <div className="form-outer w-full mx-auto">
