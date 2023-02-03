@@ -26,7 +26,7 @@ export default function AboutUs({}: Props) {
           <div className="about-text-top sm:px-7 pl-3 border-l-4 border-l-[#D8A61F] space-y-1 w-5/6 mx-auto">
             <h2 className='font-bold sm:text-5xl text-xl'>ASULEWON BABALOLA</h2>
             <h4 className='sm:text-3xl font-normal text-sm'>FOUNDER & CEO</h4>
-            <p className='sm:text-base font-normal pt-1 leading-tight pr-5 text-base'>
+            <p className='sm:text-base font-normal pt-1 leading-tight sm:pr-5 text-base'>
               lorem ipsum dolor sit amet lorem ipsum dolo sit amet lorem ipsum dolor sit amet lorem
               ipsum dolor sit amet lorem ipsum dolor sit  lorem ipsum dolor sit amet lorem ipsum dolor
               amet lorem ipsum dolor sit amet
