@@ -14,8 +14,8 @@ export default function Footer({}: Props) {
 
         <div className=' flex justify-between items-start'>
           <div className='space-y-4 sm:space-y-7'>
-            <Image src={FLogo} alt='Laspag company logo' className='sm:h-auto h-8'></Image>
-            <ul className='flex sm:pl-5 space-x-5 text-w'>
+            <Image src={FLogo} alt='Laspag company logo' className='sm:h-auto h-8 w-28 object-cover'></Image>
+            <ul className='flex sm:pl-5 space-x-7 text-w'>
               <li><FaTwitter className='sm:text-2xl text-xl'/></li>
               <li><FaInstagram className='sm:text-2xl text-xl'/></li>
               <li><FaFacebook className='sm:text-2xl text-xl'/></li>

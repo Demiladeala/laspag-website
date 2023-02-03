@@ -33,39 +33,39 @@ export default function Header({}: Props) {
         initial={{x:200,opacity:0}}
         whileInView={{opacity:1, x:0}} 
         transition={{duration:0.2, delay:0.2}}
-        className={nav? ' w-full overflow-hidden fixed top-[75px] h-screen z-50 bg-black/70 flex justify-end md:hidden' : 'hidden'}>
+        className={nav? ' w-full overflow-hidden fixed top-[75px] h-screen z-50 bg-transparent flex justify-end md:hidden' : 'hidden'}>
           <div onClick={handleNav} className={nav? 'w-full fixed overflow-hidden top-0 h-screen z-10 cursor-pointer':'hidden'}></div>
-          <motion.div className={nav? 'w-[85%] fixed overflow-hidden  h-screen z-10 bg-white':'hidden'}>
+          <motion.div className={nav? 'w-[90%] fixed overflow-hidden  h-screen z-10 bg-white':'hidden'}>
           <div className='w-[85%] mt-8 mx-auto'>
               <div className='w-full flex'>
                   <div className='w-[30%] h-28 rounded-2xl border-black border flex justify-center items-center'>
                       <IoMdContact size={80}/>
                   </div>
                   <div className='flex flex-col ml-8 font-quattrocento'>
-                    <h1 className='font-bold text-lg'>Taiwo Ifeoluwa</h1>
+                    <h1 className='font-bold text-xl'>UserName</h1>
                     <p className='text-[#D8A61F] text-sm py-2'>View and Edit Profile</p>
-                    <p className='text-[#313335] text-xs font-bold'>70% complete</p>
+                    <p className='text-[#313335] text-xs font-bold'>0% complete</p>
                   </div>
               </div>
               <div className='flex flex-col font-ptsans py-10'>
                     <Link href='/' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
-                      <BiHomeAlt className='font-extrabold' size={30}/><p className='font-bold text-lg'>Home</p>
+                      <BiHomeAlt className='font-medium' size={30}/><p className='font-medium text-lg'>Home</p>
                       </div>
                     </Link>
                     <Link href='#menu' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
-                      <BsBagCheck className='font-extrabold' size={30}/><p className='font-bold text-lg'>Our Menu</p>
+                      <BsBagCheck className='font-medium' size={30}/><p className='font-medium text-lg'>Our Menu</p>
                       </div>
                     </Link>
                     <Link href='#about' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
-                      <BsPersonCheck className='font-extrabold' size={30}/><p className='font-bold text-lg'>About us</p>
+                      <BsPersonCheck className='font-medium' size={30}/><p className='font-medium text-lg'>About us</p>
                       </div>
                     </Link>
                     <Link href='#contact' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
-                      <BsTelephone className='font-extrabold' size={30}/><p className='font-bold text-lg'>Contact</p>
+                      <BsTelephone className='font-medium' size={30}/><p className='font-medium text-lg'>Contact</p>
                       </div>
                     </Link>
                   </div>
@@ -103,7 +103,7 @@ export default function Header({}: Props) {
           <div className='hidden md:flex gap-4 pr-8'>
             <Link href='/'><button className='border border-gray-600 rounded-lg px-2 py-[2px] hover:bg-black/5 transition duration-150 text-sm'>Login</button></Link>
             <Link href='/'><button className='bg-[#D8A61F] text-white rounded-lg px-2 py-[3px] hover:bg-opacity-75 transition duration-150 text-sm'>Signup</button></Link>
-            <div className='relative'>
+            <div className='relative cursor-pointer'>
               <AiOutlineShoppingCart size={25}/>
               <div className='absolute bottom-4 left-4 bg-[#D8A61F] h-5 w-5 rounded-full text-white p-2 flex items-center justify-center'>0</div>
             </div>
