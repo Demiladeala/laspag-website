@@ -17,7 +17,7 @@ export default function Contact({}: Props) {
             <div className="contact-details-outer text-white bg-[#D8A61F] sm:w-[40%] w-[85%] mx-auto sm:mx-0 rounded-3xl p-5 sm:py-10 sm:space-y-10 space-y-5 relative z-10">
                 <h3 className='sm:text-3xl text-lg font-bold pl-2 border-l-2 border-l-white w-3/6 mx-auto text-center'>Contact Us</h3>
 
-                <div className="contact-details-main sm:space-y-5 space-y-3 sm:text-xl text-xs">
+                <div className="contact-details-main sm:space-y-5 space-y-3 sm:text-lg text-xs">
                     <h4 className='flex items-center'><span className='pr-3'><FiHome className='sm:text-2xl text-lg'/></span>Aluta Market, Federal University Of Technology, Akure.</h4>
                     <h4 className='flex items-center'><span className='pr-3'><CiMail className='sm:text-2xl text-lg'/></span>Sisilaspag@gmail.com</h4>
                     <h4 className='flex items-center'><span className='pr-3'><BiUser className='sm:text-2xl text-lg'/></span>Asulewon Babalola</h4>
@@ -39,7 +39,7 @@ export default function Contact({}: Props) {
                 <div className="git-inner w-full h-auto">
                     <div className="git-main-content sm:w-[75%] w-full sm:ml-[22%] py-20 sm:!pb-10 !pb-5 px-5 space-y-3">
                         <h3 className='sm:text-3xl text-lg font-bold pl-2 border-l-2 border-l-[#D8A61F] w-[60%] mx-auto text-center'>GET IN TOUCH</h3>
-                        <h5 className='text-center text-sm'>Contact us for an order, help, or to join the team</h5>
+                        <h5 className='text-center text-base'>Contact us for an order, help, or to join the team</h5>
                         
                         <div className="form-outer w-full mx-auto">
                             <form action="" className="w-full space-y-3 sm:text-lg text-base">
