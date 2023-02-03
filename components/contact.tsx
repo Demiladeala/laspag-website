@@ -14,37 +14,37 @@ export default function Contact({}: Props) {
   return (
     <div className='contact-outer pt-20 pb-40 font-normal sm:pl-20 sm:pt-40  relative'>
         <motion.div
-        initial={{opacity:0,x:-20}}
+        initial={{opacity:0,x:50}}
         whileInView={{opacity:1,x:0}}
         transition={{duration:1}}
         viewport={{once: true}} 
         className="contact-inner w-5/6 mx-auto relative">
 
             <div className="contact-details-outer text-white bg-[#D8A61F] sm:w-[40%] w-[85%] mx-auto sm:mx-0 rounded-3xl p-5 sm:py-10 sm:space-y-10 space-y-5 relative z-10">
-                <h3 className='sm:text-3xl text-xl font-bold pl-2 border-l-2 border-l-white w-3/6  mx-auto text-center'>Contact Us</h3>
+                <h3 className='sm:text-3xl text-base font-bold pl-2 border-l-2 border-l-white w-3/6  mx-auto text-center'>Contact Us</h3>
 
-                <div className="contact-details-main sm:space-y-5 space-y-3 sm:text-xl text-xs">
-                    <h4 className='flex items-center'><span className='pr-3'><FiHome size={24}/></span>Aluta Market, Federal University Of Technology, Akure.</h4>
-                    <h4 className='flex items-center'><span className='pr-3'><CiMail size={24}/></span>Sisilaspag@gmail.com</h4>
-                    <h4 className='flex items-center'><span className='pr-3'><BiUser size={24}/></span>Asulewon Babalola</h4>
-                    <h4 className='flex items-center'><span className='pr-3'><FiPhone size={24}/></span>07060928727 <br/>08048382782</h4>
+                <div className="contact-details-main sm:space-y-5 space-y-3 sm:text-lg text-xs">
+                    <h4 className='flex items-center'><span className='pr-3'><FiHome className='sm:text-2xl text-lg'/></span>Aluta Market, Federal University Of Technology, Akure.</h4>
+                    <h4 className='flex items-center'><span className='pr-3'><CiMail className='sm:text-2xl text-lg'/></span>Sisilaspag@gmail.com</h4>
+                    <h4 className='flex items-center'><span className='pr-3'><BiUser className='sm:text-2xl text-lg'/></span>Asulewon Babalola</h4>
+                    <h4 className='flex items-center'><span className='pr-3'><FiPhone className='sm:text-2xl text-lg'/></span>07060928727 <br/>08048382782</h4>
                 </div>
                 <div className="social-contact-icons">
                     <ul className='flex sm:pl-7 space-x-5 sm:justify-start justify-center'>
-                        <li><FaTwitter size={24}/></li>
-                        <li><FaInstagram size={24}/></li>
-                        <li><FaFacebook size={24}/></li>
-                        <li><FaTelegram size={24}/></li>
+                        <li><FaTwitter className='sm:text-2xl text-xl'/></li>
+                        <li><FaInstagram className='sm:text-2xl text-xl'/></li>
+                        <li><FaFacebook className='sm:text-2xl text-xl'/></li>
+                        <li><FaTelegram className='sm:text-2xl text-xl'/></li>
                     </ul>
                 </div>
             </div>
 
 
 
-            <div className="git-outer bg-white rounded-3xl absolute sm:-top-10 sm:left-1/4 sm:w-4/6 top-60 w-full text-xl mb-20">
+            <div className="git-outer bg-white rounded-3xl absolute sm:-top-10 sm:left-1/4 sm:w-4/6 top-52 w-full text-xl mb-20">
                 <div className="git-inner w-full h-auto">
                     <div className="git-main-content sm:w-[75%] w-full sm:ml-[22%] py-20 sm:!pb-10 !pb-5 px-5 space-y-3">
-                        <h3 className='sm:text-3xl text-xl font-bold pl-2 border-l-2 border-l-[#D8A61F] w-[60%] mx-auto text-center'>GET IN TOUCH</h3>
+                        <h3 className='sm:text-3xl text-base font-bold pl-2 border-l-2 border-l-[#D8A61F] w-[60%] mx-auto text-center'>GET IN TOUCH</h3>
                         <h5 className='text-center text-xs'>Contact us for an order, help, or to join the team</h5>
                         
                         <div className="form-outer w-full mx-auto">
