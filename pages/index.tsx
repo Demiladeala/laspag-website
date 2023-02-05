@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import Header from '../components/header'
-import Hero from '../components/hero'
-import Menu from '../components/menu'
+import { useState, useEffect } from 'react'
+import Hero from '../components/Hero'
+import Menu from '../components/Menu'
+import Services from '../components/Services'
 import Head from 'next/head'
-import AboutUs from '@/components/aboutUs'
-import Newsletter from '@/components/newsletter'
-import Contact from '@/components/contact'
-import Banner from '@/components/banner'
-import Footer from '@/components/footer'
+import AboutUs from '../components/AboutUs'
+import Newsletter from '../components/Newsletter'
+import Contact from '../components/Contact'
+import Banner from '../components/Banner'
+
 
 
 export default function Home() {
@@ -29,12 +29,13 @@ export default function Home() {
       
       <div className={`nav? 'fixed': 'font-montserrat scroll-smooth bg-[#fbfbfb] z-49'`}>
       
-      <section id='header'>
-       <Header/>
-      </section>
 
       <section id='hero'>
-        <Hero/>
+       <Hero/>
+      </section>
+
+      <section id='services'>
+        <Services/>
       </section>
 
       <section id='menu'>
@@ -57,10 +58,6 @@ export default function Home() {
         <Banner/>
       </section>
       
-
-      <section id='footer'>
-        <Footer/>
-      </section>
       </div>
     </>
   )

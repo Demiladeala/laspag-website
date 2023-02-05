@@ -9,10 +9,6 @@ import {BsPersonCheck, BsBagCheck, BsTelephone} from 'react-icons/bs'
 import {BiHomeAlt} from 'react-icons/bi'
 import {IoMdContact} from 'react-icons/io'
 import Link from 'next/link'
-import homeimg from '../public/navbar-home.svg'
-import menuimg from '../public/navbar-menu.svg'
-import aboutimg from '../public/navbar-about.svg'
-import contactimg from '../public/navbar-contact.svg'
 
 type Props = {}
 
@@ -22,6 +18,12 @@ export default function Header({}: Props) {
 
   const handleNav = () => {
     setNav(!nav)
+  }
+
+  const [cart, setCart] = useState(false)
+
+  const handleCart = () => {
+    setCart(!cart)
   }
 
   return (
@@ -50,28 +52,51 @@ export default function Header({}: Props) {
               <div className='flex flex-col font-ptsans py-10'>
                     <Link href='/' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
-                      <BiHomeAlt className='font-medium' size={30}/><p className='font-medium text-lg'>Home</p>
+                      <BiHomeAlt className='font-medium' size={25}/><p className='font-medium text-base'>Home</p>
                       </div>
                     </Link>
                     <Link href='#menu' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
-                      <BsBagCheck className='font-medium' size={30}/><p className='font-medium text-lg'>Our Menu</p>
+                      <BsBagCheck className='font-medium' size={25}/><p className='font-medium text-base'>Our Menu</p>
                       </div>
                     </Link>
                     <Link href='#about' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
-                      <BsPersonCheck className='font-medium' size={30}/><p className='font-medium text-lg'>About us</p>
+                      <BsPersonCheck className='font-medium' size={25}/><p className='font-medium text-base'>About us</p>
                       </div>
                     </Link>
                     <Link href='#contact' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
-                      <BsTelephone className='font-medium' size={30}/><p className='font-medium text-lg'>Contact</p>
+                      <BsTelephone className='font-medium' size={25}/><p className='font-medium text-base'>Contact</p>
                       </div>
                     </Link>
                   </div>
             </div>
           </motion.div>
         </motion.div>
+
+
+        <div>
+        <div onClick={handleCart} className={cart? 'w-full h-[90vh] bg-black/60 fixed top-[75px] z-50 sm:flex sm:right-0 hidden cursor-pointer':'hidden'}></div>
+          <motion.div
+          initial={{opacity:0}}
+          whileInView={{opacity:1}} 
+          transition={{duration:0.1, delay:0.1}}
+          className={cart? 'w-full h-[90vh] bg-white fixed top-[75px] z-50 sm:w-[50%] md:w-[30%] sm:flex sm:right-0':'hidden'}
+          >
+            <div className='w-[90%] mx-auto'>
+              <div className='flex flex-col items-center'>
+                <div className='flex flex-row gap-2 mt-28'>
+                <AiOutlineShoppingCart size={25} className='mt-3 animate-bounce duration-[30ms]'/>
+                <h1 className='text-center py-3'>Shopping Cart is Empty!</h1>
+                </div>
+              </div>
+              <div className='w-[80%] mx-auto h-[1px] bg-gray-700'></div>
+            </div>
+          </motion.div>
+        </div>
+
+
 
       <div className=' w-full fixed overflow-hidden z-[1000] bg-opacity-95 bg-white flex items-center justify-between px-3 sm:px-2 mx-auto font-ptsans'>
           <div>
@@ -80,7 +105,7 @@ export default function Header({}: Props) {
 
           <div className='flex gap-6 pr-4 cursor-pointer md:hidden'>
           {nav? <VscClose onClick={handleNav} size={25}/> : <HiOutlineMenuAlt2 onClick={handleNav} size={25} />}
-              <div className='relative mr-2'>
+              <div onClick={handleCart} className='relative mr-2'>
                <AiOutlineShoppingCart size={25}/>
               <div className='absolute bottom-4 left-4 bg-[#D8A61F] h-5 w-5 rounded-full text-white p-2 flex items-center justify-center'>0</div>
             </div>
@@ -103,7 +128,7 @@ export default function Header({}: Props) {
           <div className='hidden md:flex gap-4 pr-8'>
             <Link href='/'><button className='border border-gray-600 rounded-lg px-2 py-[2px] hover:bg-black/5 transition duration-150 text-sm'>Login</button></Link>
             <Link href='/'><button className='bg-[#D8A61F] text-white rounded-lg px-2 py-[3px] hover:bg-opacity-75 transition duration-150 text-sm'>Signup</button></Link>
-            <div className='relative cursor-pointer'>
+            <div onClick={handleCart} className='relative cursor-pointer'>
               <AiOutlineShoppingCart size={25}/>
               <div className='absolute bottom-4 left-4 bg-[#D8A61F] h-5 w-5 rounded-full text-white p-2 flex items-center justify-center'>0</div>
             </div>
