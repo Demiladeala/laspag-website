@@ -55,17 +55,17 @@ export default function Header({}: Props) {
                       <BiHomeAlt className='font-medium' size={25}/><p className='font-medium text-base'>Home</p>
                       </div>
                     </Link>
-                    <Link href='#menu' onClick={handleNav}>
+                    <Link href='/#menu' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
                       <BsBagCheck className='font-medium' size={25}/><p className='font-medium text-base'>Our Menu</p>
                       </div>
                     </Link>
-                    <Link href='#about' onClick={handleNav}>
+                    <Link href='/#about' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
                       <BsPersonCheck className='font-medium' size={25}/><p className='font-medium text-base'>About us</p>
                       </div>
                     </Link>
-                    <Link href='#contact' onClick={handleNav}>
+                    <Link href='/#contact' onClick={handleNav}>
                       <div className='flex flex-row gap-6 py-5 hover:text-[#D8A61F] w-52'>
                       <BsTelephone className='font-medium' size={25}/><p className='font-medium text-base'>Contact</p>
                       </div>
@@ -77,7 +77,7 @@ export default function Header({}: Props) {
 
 
         <div>
-        <div onClick={handleCart} className={cart? 'w-full h-[90vh] bg-black/60 fixed top-[75px] z-50 sm:flex sm:right-0 hidden cursor-pointer':'hidden'}></div>
+        <div id='cart' onClick={handleCart} className={cart? 'w-full h-[90vh] bg-black/60 fixed top-[75px] z-50 sm:flex sm:right-0 hidden cursor-pointer':'hidden'}></div>
           <motion.div
           initial={{opacity:0}}
           whileInView={{opacity:1}} 
@@ -107,7 +107,7 @@ export default function Header({}: Props) {
           {nav? <VscClose onClick={handleNav} size={25}/> : <HiOutlineMenuAlt2 onClick={handleNav} size={25} />}
               <div onClick={handleCart} className='relative mr-2'>
                <AiOutlineShoppingCart size={25}/>
-              <div className='absolute bottom-4 left-4 bg-[#D8A61F] h-5 w-5 rounded-full text-white p-2 flex items-center justify-center'>0</div>
+              <div className='absolute bottom-4 left-4 bg-[#D8A61F] h-5 w-5 rounded-full text-white p-2 items-center justify-center hidden'>0</div>
             </div>
           </div>
 
@@ -115,9 +115,9 @@ export default function Header({}: Props) {
 
           <div className='hidden md:flex gap-6 font-medium text-[16px]'> 
             <Link href='/' className='text-[#D8A61F]'>Home</Link>
-            <Link href='#menu' className='hover:text-[#D8A61F]'>Our Menu</Link>
-            <Link href='#about' className='hover:text-[#D8A61F]'>About us</Link>
-            <Link href='#contact' className='hover:text-[#D8A61F]'>Contact</Link>
+            <Link href='/#menu' className='hover:text-[#D8A61F]'>Our Menu</Link>
+            <Link href='/#about' className='hover:text-[#D8A61F]'>About us</Link>
+            <Link href='/#contact' className='hover:text-[#D8A61F]'>Contact</Link>
             {/* <div className='flex gap-2 hover:text-[#D8A61F]'>
               <BsFillTelephoneFill className='mt-1'/>
               <p>09020169257</p>
@@ -130,7 +130,7 @@ export default function Header({}: Props) {
             <Link href='/'><button className='bg-[#D8A61F] text-white rounded-lg px-2 py-[3px] hover:bg-opacity-75 transition duration-150 text-sm'>Signup</button></Link>
             <div onClick={handleCart} className='relative cursor-pointer'>
               <AiOutlineShoppingCart size={25}/>
-              <div className='absolute bottom-4 left-4 bg-[#D8A61F] h-5 w-5 rounded-full text-white p-2 flex items-center justify-center'>0</div>
+              <div className='absolute bottom-4 left-4 bg-[#D8A61F] h-5 w-5 rounded-full text-white p-2 hidden items-center justify-center'>0</div>
             </div>
           </div>
 

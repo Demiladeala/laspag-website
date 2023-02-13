@@ -19,7 +19,7 @@ export default function Menu({}: Props) {
     className='pb-20 relative justify-evenly max-w-full'>
 
       <div className='flex pt-[70px] justify-center'>
-        <h3 className='text-2xl sm:text-3xl font-bold pb-20 pt-10 uppercase font-quattrocento'>Menu</h3>
+        <h3 className='text-2xl sm:text-3xl font-bold pb-20 pt-10 uppercase'>Menu</h3>
       </div>
 
       <motion.div
@@ -32,18 +32,18 @@ export default function Menu({}: Props) {
         <Link href='menu/spaghettiMenu'>
           <div className=' bg-white rounded-3xl flex flex-col justify-center items-center cursor-pointer p-10 hover:scale-110 relative'>
           <Image  alt='menu' width={150} height={10} src={spagimg} className='pt-4 absolute bottom-48 sm:bottom-48 animate-pulse'></Image>
-          <h3 className='font-bold text-lg mt-10 relative py-3 sm:text-2xl font-sansation'>STIR-FRY SPAGHETTI</h3>
-          <span className='w-full flex justify-center py-3'>⭐⭐⭐⭐<span className='text-2xl relative bottom-1'>☆</span></span>
-          <span className='font-ptsans py-3 text-sm sm:text-lg'>{formatCurrency (1200)} - {formatCurrency(2500)}</span>
+          <h3 className='font-bold text-lg mt-10 relative py-3 sm:text-2xl'>STIR-FRY SPAGHETTI</h3>
+          <span className='w-full flex justify-center py-3'>⭐⭐⭐⭐⭐</span>
+          <span className='py-3 text-sm sm:text-lg'>{formatCurrency (1200)} - {formatCurrency(2500)}</span>
           </div>
         </Link>
 
         <Link href='menu/burgerMenu'>
           <div className=' bg-white rounded-3xl flex flex-col justify-center items-center cursor-pointer p-10 hover:scale-110 relative'>
           <Image  alt='menu' width={150} height={10} src={burgerimg} className='pt-4 absolute bottom-48 sm:bottom-48 animate-pulse'></Image>
-          <h3 className='font-bold text-lg mt-10 relative py-3 sm:text-2xl font-sansation'>TC BURGER</h3>
-          <span className='w-full flex justify-center py-3'>⭐⭐⭐⭐<span className='text-2xl relative bottom-1'>☆</span></span>
-          <span className='font-ptsans py-3 text-sm sm:text-lg'>{formatCurrency (1500)} - {formatCurrency(2000)}</span>
+          <h3 className='font-bold text-lg mt-10 relative py-3 sm:text-2xl'>TC BURGER</h3>
+          <span className='w-full flex justify-center py-3'>⭐⭐⭐⭐⭐</span>
+          <span className='py-3 text-sm sm:text-lg'>{formatCurrency (1500)} - {formatCurrency(2000)}</span>
           </div>
         </Link>
 

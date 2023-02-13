@@ -6,7 +6,6 @@ import Head from 'next/head'
 import AboutUs from '../components/AboutUs'
 import Newsletter from '../components/Newsletter'
 import Contact from '../components/Contact'
-import Banner from '../components/Banner'
 
 
 
@@ -54,8 +53,10 @@ export default function Home() {
         <Contact/>
       </section>
 
-      <section id='banner'>
-        <Banner/>
+      <section>
+        <div className='w-full h-60 sm:hidden'>
+
+        </div>
       </section>
       
       </div>

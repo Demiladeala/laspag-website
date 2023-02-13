@@ -19,12 +19,11 @@ export default function Hero({}: Props) {
         transition={{duration:1,type:'spring',stiffness:200}}
         viewport={{once: true}} 
         className='h-[48%] sm:h-[98%] w-full flex flex-col items-center sm:items-start p-14 sm:p-36 max-[290px]:p-10'>
-            <p className='text-white text-7xl sm:text-8xl font-robotoCondensed uppercase font-bold text-center max-[290px]:text-5xl'>Delicacy</p>
-            <p className='text-white text-4xl sm:text-6xl font-seaweed pl-8 sm:pr-5 flex justify-end'>Like never before</p>
-            <p className='text-white sm:mr-12 sm:text-4xl text-3xl flex gap-2 font-quattrocento py-3 max-[290px]:text-xl max-[290px]:block'><span className='font-bold'>Spaghetti</span> and <span className='font-bold'>Chicken</span></p>
-            <div className='flex gap-6 mx-auto justify-center sm:mt-8 font-quattrocento'>
-              <button className='text-[#D8A61F] bg-white rounded-xl px-4 py-[2px] sm:px-6 sm:py-[4px] text-lg sm:text-xl text-center hover:bg-white/90'>Log in</button>
-              <button className='text-[#D8A61F] bg-white rounded-xl px-4 py-[2px] sm:px-6 sm:py-[4px] text-lg sm:text-xl text-center hover:bg-white/90'>Sign up</button>
+            <p className='text-7xl sm:text-8xl uppercase font-bold text-center max-[290px]:text-5xl'>Delicacy</p>
+            <p className='text-3xl sm:text-4xl sm:pr-5 flex justify-end'>Like never before</p>
+            <p className='sm:mr-12 sm:text-4xl text-3xl flex gap-2 py-3 max-[290px]:text-xl max-[290px]:block'><span className='font-bold'>Spaghetti</span> and <span className='font-bold'>Chicken</span></p>
+            <div className='flex mx-auto sm:mt-8'>
+              <button className='bg-white rounded-xl px-4 py-[2px] sm:px-6 sm:py-[4px] text-lg sm:text-xl text-center hover:bg-white/60'>Place Order</button>
             </div>
         </motion.div>
 
