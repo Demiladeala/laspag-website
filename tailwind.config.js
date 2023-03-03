@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
+        'poppins': ["poppins","sans-serif"],
         'ptsans':["PT Sans Caption", "sans-serif"],
         'montserrat':["Montserrat", "sans-serif"],
         'seaweed': ["Seaweed Script", "sans-serif"],

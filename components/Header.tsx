@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import logo from '../public/logo.png';
+import logo from 'public/logo.png'
 import React, { useState, useEffect} from 'react'
 import {VscClose} from 'react-icons/vsc'
 import {HiOutlineMenuAlt2} from 'react-icons/hi'
@@ -36,7 +36,7 @@ export default function Header({}: Props) {
         whileInView={{opacity:1, x:0}} 
         transition={{duration:0.2, delay:0.2}}
         className={nav? ' w-full overflow-hidden fixed top-[75px] h-screen z-50 bg-transparent flex justify-end md:hidden' : 'hidden'}>
-          <div onClick={handleNav} className={nav? 'w-full fixed overflow-hidden top-0 h-screen z-10 cursor-pointer':'hidden'}></div>
+          <div onClick={handleNav} className={nav? 'w-full fixed overflow-hidden top-0 h-screen z-10 cursor-pointer bg-black/70':'hidden'}></div>
           <motion.div className={nav? 'w-[90%] fixed overflow-hidden  h-screen z-10 bg-white':'hidden'}>
           <div className='w-[85%] mt-8 mx-auto'>
               <div className='w-full flex'>
@@ -97,15 +97,18 @@ export default function Header({}: Props) {
         </div>
 
 
+             {/* MEDIUM AND LARGE SIZE NAVBAR JSX AND STYLING */}
 
-      <div className=' w-full fixed overflow-hidden z-[1000] bg-opacity-95 bg-white flex items-center justify-between px-3 sm:px-2 mx-auto font-ptsans'>
+      <div className=' w-full fixed overflow-hidden z-[1000] bg-opacity-95  flex items-center justify-between px-3 sm:px-2 mx-auto bg-white/80'>
           <div>
               <Link href='/'><Image alt='logo' className=' cursor-pointer' src={logo}></Image></Link>
           </div>
 
           <div className='flex gap-6 pr-4 cursor-pointer md:hidden'>
-          {nav? <VscClose onClick={handleNav} size={25}/> : <HiOutlineMenuAlt2 onClick={handleNav} size={25} />}
-              <div onClick={handleCart} className='relative mr-2'>
+              <div className='bg-[#facc15] p-3 rounded-full text-white'>
+                {nav? <VscClose onClick={handleNav} size={25} className='z-[50]'/> : <HiOutlineMenuAlt2 onClick={handleNav} size={25} className='z-[50] rounded-full' />}
+              </div>
+              <div onClick={handleCart} className='relative mr-2 hidden'>
                <AiOutlineShoppingCart size={25}/>
               <div className='absolute bottom-4 left-4 bg-[#D8A61F] h-5 w-5 rounded-full text-white p-2 items-center justify-center hidden'>0</div>
             </div>
@@ -114,10 +117,10 @@ export default function Header({}: Props) {
       
 
           <div className='hidden md:flex gap-6 font-medium text-[16px]'> 
-            <Link href='/' className='text-[#D8A61F]'>Home</Link>
-            <Link href='/#menu' className='hover:text-[#D8A61F]'>Our Menu</Link>
-            <Link href='/#about' className='hover:text-[#D8A61F]'>About us</Link>
-            <Link href='/#contact' className='hover:text-[#D8A61F]'>Contact</Link>
+            <Link href='/' className='text-[#facc15]'>Home</Link>
+            <Link href='/#menu' className='hover:text-[#facc15]'>Our Menu</Link>
+            <Link href='/#about' className='hover:text-[#facc15]'>About us</Link>
+            <Link href='/#contact' className='hover:text-[#facc15]'>Contact</Link>
             {/* <div className='flex gap-2 hover:text-[#D8A61F]'>
               <BsFillTelephoneFill className='mt-1'/>
               <p>09020169257</p>
@@ -127,8 +130,8 @@ export default function Header({}: Props) {
 
           <div className='hidden md:flex gap-4 pr-8'>
             <Link href='/'><button className='border border-gray-600 rounded-lg px-2 py-[2px] hover:bg-black/5 transition duration-150 text-sm'>Login</button></Link>
-            <Link href='/'><button className='bg-[#D8A61F] text-white rounded-lg px-2 py-[3px] hover:bg-opacity-75 transition duration-150 text-sm'>Signup</button></Link>
-            <div onClick={handleCart} className='relative cursor-pointer'>
+            <Link href='/'><button className=' rounded-lg px-2 py-[3px] hover:bg-opacity-75 transition duration-150 text-sm bg-white'>Signup</button></Link>
+            <div onClick={handleCart} className='relative cursor-pointer hidden'>
               <AiOutlineShoppingCart size={25}/>
               <div className='absolute bottom-4 left-4 bg-[#D8A61F] h-5 w-5 rounded-full text-white p-2 hidden items-center justify-center'>0</div>
             </div>

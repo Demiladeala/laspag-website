@@ -20,7 +20,7 @@ export default function Contact({}: Props) {
         viewport={{once:true}}
         className="contact-inner w-5/6 mx-auto relative">
 
-            <div className="contact-details-outer text-white bg-[#D8A61F] sm:w-[40%] w-[85%] mx-auto sm:mx-0 rounded-3xl p-5 sm:py-10 sm:space-y-10 space-y-5 relative z-10">
+            <div className="contact-details-outer text-white bg-[#facc15] sm:w-[40%] w-[85%] mx-auto sm:mx-0 rounded-3xl p-5 sm:py-10 sm:space-y-10 space-y-5 relative z-10">
                 <h3 className='sm:text-3xl text-lg font-bold pl-2 border-l-2 border-l-white w-3/6  mx-auto text-center font-quattrocento'>Contact Us</h3>
 
                 <div className="contact-details-main sm:space-y-5 space-y-3 sm:text-lg text-sm">
@@ -41,7 +41,7 @@ export default function Contact({}: Props) {
 
 
 
-            <div className="git-outer bg-white rounded-3xl absolute sm:-top-10 sm:left-1/4 sm:w-4/6 top-52 w-full text-xl mb-20">
+            <div className="git-outer bg-white rounded-3xl absolute sm:-top-10 sm:left-1/4 sm:w-4/6 top-52 w-full text-xl mb-20 shadow-card">
                 <div className="git-inner w-full h-auto">
                     <div className="git-main-content sm:w-[75%] w-full sm:ml-[22%] py-20 sm:!pb-10 !pb-5 px-5 space-y-3">
                         <h3 className='sm:text-3xl text-lg mt-4 sm:mt-0 font-bold pl-2 border-l-2 border-l-[#D8A61F] w-[60%] mx-auto text-center'>GET IN TOUCH</h3>
@@ -53,7 +53,7 @@ export default function Contact({}: Props) {
                                 <input type="email" name='email' id='email' placeholder='Email' required className='bg-[#F3F3F3] w-full sm:h-14 h-10 sm:rounded-3xl rounded-lg pl-5 outline-none'/>
                                 <input type="tel" name='number' id='number' placeholder='Phone Number' required className='bg-[#F3F3F3] w-full sm:h-14 h-10 sm:rounded-3xl rounded-lg pl-5 outline-none'/>
                                 <textarea name="message" id="message" cols={30} rows={10} placeholder='Enter Message' required className='bg-[#F3F3F3] w-full sm:h-14 h-14 sm:rounded-3xl rounded-lg pl-5 outline-none pt-2'></textarea>
-                                <button type="submit" className='git-btn sm:h-14 h-10 rounded-3xl bg-[#D8A61F] hover:bg-[#D8A61F]/80 text-white w-2/6 ml-[70%]'>Send</button>
+                                <button type="submit" className='git-btn sm:h-14 h-10 rounded-3xl bg-[#facc15] hover:bg-[#facc15]/80 text-white w-2/6 ml-[70%]'>Send</button>
                             </form>
                         </div>
                     </div>

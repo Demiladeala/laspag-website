@@ -26,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div className={`nav? 'fixed': 'font-montserrat scroll-smooth bg-[#fbfbfb] z-49'`}>
+      <div className={`nav? 'fixed': 'font-montserrat scroll-smooth bg-[#fefefe] z-49'`}>
       
 
       <section id='hero'>

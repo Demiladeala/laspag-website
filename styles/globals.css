@@ -6,6 +6,7 @@
 @import url("https://fonts.cdnfonts.com/css/seaweed-script");
 @import url('https://fonts.cdnfonts.com/css/sansation');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,12 +17,12 @@
 }
 @layer base{
     .hero{
-        @apply bg-yellow-50
+        @apply bg-white
     }
 }
-/* .hero{
-    background: linear-gradient(180deg, #DAA520 0%, #EFBA34 51.04%, #AC7F0E 100%);
-} */
+.hero-text{
+    font-family: 'Itim', cursive;
+}
 .news-btn{
     box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -29,3 +30,18 @@
     -webkit-tap-highlight-color: transparent;
     font-family: 'Space Grotesk', sans-serif;
 }
+.shadow-card{
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 16%), 0 2px 5px 0 rgb(0 0 0 / 26%);
+}
+.wavy-bg {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    background: #fbfbfb;
+    overflow: hidden;
+}
+.menu-card{
+    background: linear-gradient(#00000017,#0303039a);
+}
+  
+  
