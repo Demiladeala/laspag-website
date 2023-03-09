@@ -9,8 +9,9 @@ type Props = {}
 
 export default function AboutUs({}: Props) {
   return (
-    <div className='about-outer pb-20 bg-white'>
+    <div className='about-outer pb-20 bg-gray-100'>
       <div className="about-inner space-y-0 sm:space-y-10">
+
         <div className='flex pt-[50px] justify-center'>
           <h3 className='text-2xl sm:text-3xl font-bold pb-20 text-center pt-10 uppercase font-poppins'>About</h3>
         </div>

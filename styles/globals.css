@@ -37,11 +37,13 @@
     position: relative;
     width: 100%;
     min-height: 50vh;
-    background: #fbfbfb;
+    background: #facc15;
     overflow: hidden;
 }
 .menu-card{
     background: linear-gradient(#00000017,#0303039a);
 }
-  
+.laspag_small_navbar{
+    font-family: 'itim', 'sans-serif';
+}  
   

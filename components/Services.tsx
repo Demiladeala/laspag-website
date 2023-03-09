@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { CiBowlNoodles } from 'react-icons/ci'
+import { GiNoodles } from 'react-icons/gi'
 import { SiFoodpanda } from 'react-icons/si'
 import { BsTruck } from 'react-icons/bs'
 import { motion } from 'framer-motion'
@@ -17,10 +17,10 @@ export default function Services({}: Props) {
             <motion.div
             initial={{opacity:0}}
             whileInView={{opacity:1}}
-            transition={{duration:0.5,delay:0.6}}
+            transition={{duration:0.3,delay:0.4}}
             viewport={{once:true}}  
             className='bg-white flex flex-col justify-center items-center p-7 rounded-3xl relative shadow-card'>
-                <CiBowlNoodles  size={35} className='text-[#facc15]'/>
+                <GiNoodles  size={35} className='text-[#facc15]'/>
                 <h1 className='font-bold text-xl'>Tasty Food</h1>
                 <p className='py-8 mx-auto relative'>lorem ipsum dolor sit amet lorem ipsum ipsum dolor sit amet lorem 
                     ipsum dolor</p>
@@ -29,7 +29,7 @@ export default function Services({}: Props) {
             <motion.div
             initial={{opacity:0}}
             whileInView={{opacity:1}}
-            transition={{duration:0.5,delay:0.6}}
+            transition={{duration:0.3,delay:0.4}}
             viewport={{once:true}}  
             className='bg-white flex flex-col justify-center items-center p-7 rounded-3xl relative shadow-card'>
                 <BsTruck  size={35} className='text-[#facc15]'/>
@@ -41,7 +41,7 @@ export default function Services({}: Props) {
             <motion.div
             initial={{opacity:0}}
             whileInView={{opacity:1}}
-            transition={{duration:0.5,delay:0.6}}
+            transition={{duration:0.3,delay:0.4}}
             viewport={{once:true}}  
             className='bg-white flex flex-col justify-center items-center p-7 rounded-3xl relative shadow-card'>
                 < SiFoodpanda  size={35} className='text-[#facc15]'/>
